@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+</head>
+<body>
+    <h1 class="title">iChat </h1>
+    <div class="main">
+        <div class="name">
+            <span> <i class="fa fa-user" aria-hidden="true"></i></span>
+            <input type="text" name="name-input" id="name-input" class="name-input" value="anonymous" maxlength="20">
+
+        </div>
+        <ul class="message-conatiner" id="message-conatiner">
+            <!-- <li class="message-left">
+                <p class="message">
+                    Lorem ipsum dolor <span>bluebird * 26 July 10:30</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">
+                    Lorem ipsum dolor <span>bluebird * 26 July 10:30</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    killer is typing a message
+                </p>
+            </li> -->
+        </ul>
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="v-divider">
+            </div>
+            <button type="submit" class="send-button">Send<span><i class="fa fa-paper-plane"></i></span></button>
+        </form>
+    </div>
+    <h3 class="clients-total" id="clients-total">Total clients: 4</h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
